@@ -1,0 +1,554 @@
+body{scrollbar-face-color:#ffffff;scrollbar-highlight-color:#48494A;scrollbar-shadow-color:#D2D2D2;scrollbar-3dlight-color:#ffffff;scrollbar-arrow-color:#B0CE37;scrollbar-track-color:#ffffff;scrollbar-darkshadow-color:#ffffff;}
+.breadcrumbs {font-size:11px;font-weight:normal;color:#ffffff;}
+.breadcrumbs a{font-weight:normal;color:#ffffff;}
+.breadcrumbs a:link,.breadcrumbs a:visited{color:#ffffff;text-decoration:none;}
+.breadcrumbs a:active,.breadcrumbs a:hover{color:#000000;text-decoration:none;}
+form{margin:0;}
+input,select{font-size:11px;text-indent:2px;}
+.bodyline	{ background-color: #48494A; border: 1px #48494A solid; }
+.title {line-height: 17px!important;font-family:"Arial Narrow", Helvetica, sans-serif;font-size:14px;font-weight:bold;text-align: left;margin-bottom:6px;margin-top:10px;color:#B0CE37;}
+.title a{line-height: 17px!important;font-family:"Arial Narrow", Helvetica, sans-serif;font-size:14px;font-weight:bold;text-align: left;margin-bottom:6px;margin-top:10px;color:#B0CE37;}
+.title a:link,.title a:visited{line-height: 25px!important;font-family:"Arial Narrow", Helvetica, sans-serif;font-size:22px;font-weight:bold;text-align: left;margin-bottom:6px;margin-top:10px;color:#B0CE37;}
+.title a:active,.title a:hover{line-height: 25px!important;font-family:"Arial Narrow", Helvetica, sans-serif;font-size:22px;font-weight:bold;text-align: left;margin-bottom:6px;margin-top:10px;color:#B0CE37;}
+.innerline	{ border: 2px #48494A solid; }
+
+* {
+margin:0;
+padding:0;
+}
+
+/*
+buat font style
+*/
+body {
+background: url('../images/serenity-bk.jpg') no-repeat 0 0 #fff;
+background-attachment:fixed;
+background-position: top center;
+color: #000;
+font-family: Arial, Verdana, sans-serif;
+margin: 0;
+padding: 0;
+}
+#pagetitle {line-height: 25px!important;font-family:"Arial Narrow", Helvetica, sans-serif;font-size:22px;font-weight:bold;text-align: left;margin-bottom:6px;margin-top:10px;color:#B0CE37;}
+
+#toparea {
+ color: #000;
+ background: url('../images/logoarea2.jpg') no-repeat 0 0 #ffffff;
+ text-align: right;
+ margin: 0px 0px 0px 0px;
+ padding: 0px;
+ height: 414px;
+ width: 972px;
+ float: center;
+}
+
+#banner {
+ height: 100px; 
+ width: 972px;
+ background: url('../images/header-bg.jpg') no-repeat 0 0 #ffffff; 
+ padding-bottom: 2px;
+}
+
+#logo {
+ width:160px; 
+ height: 41px; 
+ float: left; 
+ margin:16px; 
+ padding:10px 0;
+}
+#sitename {
+ color: #000;
+ background: url('../images/shadow2.jpg') no-repeat 0 0 #ffffff;
+ text-align: center;
+ margin: 200px 10px 10px -10px;
+ padding: 1.0em 0.0em 0.0em 0;
+ height: 43px;
+ width: 972px;
+ float: center;
+}
+
+#base {
+ color: #000;
+ text-align: center;
+ background: transparent;
+ margin: 100px 5px 10px 0px;
+ padding: 10px;
+ height: 100px;
+ width: 922px;
+ float: center;
+ clear:both;
+}
+
+#wrapper { 
+ margin: 0 auto;
+ width: 972px;
+}
+
+#leftcolumn { 
+ color: #000;
+ text-align: left;
+ border: 0px solid #ccc;
+ background: #ffffff;
+ margin: 12px 8px 0px;
+ padding: 10px;
+ padding-right: 0px;
+ height: 100%;
+ width: 170px;
+ float: left;
+}
+#rightcolumn { 
+ float: right;
+ text-align: left;
+ color: #000;
+ border: 0px solid #ccc;
+ background: #ffffff;
+ margin: 12px 5px 10px 0px;
+ padding: 10px;
+ height: 100%;
+ width: 750px;
+ display: inline;
+
+}
+/*
+untuk mengeset font size disemua div
+sehingga menimpa beberapa font style sebelumnya
+*/
+div {
+   font-size: 11px;
+}
+
+/*
+jika image berada di dalam tag <a> maka image akan memiliki border, disini kami menghilangkannya
+*/
+img {
+   border: 0;
+}
+
+
+/* mengeset semua link agar memiliki garis bawah dan warna kebiru-biruan */
+a,
+a:link 
+a:active {
+   text-decoration: none;
+/* css validation akan memberi peringatan jika warna yang diset tanpa warna background. Ini akan menjelaskan element ini untuk menginherit bg colour dari element induk*/
+   background-color: inherit; 
+   color: #B0CE37; 
+}
+
+a:visited {
+   text-decoration: none;
+   background-color: inherit;
+  color: #B0CE37;                /* warna yang berbeda dapat digunakan untuk link yang telah dikunjungi */
+}
+
+
+/* menghilangkan garis bawah pada hover dan merubah warna */
+a:hover {
+   text-decoration: none;
+   background-color: transparent;
+   color: #B0CE37;
+}
+
+/*layout*/
+body {
+   background-color: #ffffff;
+   color: #333;
+	margin-top:0px;
+   margin:0em;    /* memberi ruang kosong di pagewrapper */
+}
+
+
+div#pagewrapper {
+   border: 1px solid black;
+   margin: 0 auto;       /* untuk membuat posisi tengah wrapper */
+   max-width: 80em;   
+   min-width: 60em;
+   background-color: #fff;;
+   color: black;
+}
+
+
+/*** header ***
+we will hide text and replace it with a image
+we need to assign a height for it so that the image wont cut off
+*/
+div#header {
+   height: 80px;    /* adjust according your image size */  
+}
+
+div#header h1 a {
+/* you can set your own image here */
+   background: #385C72 url('../images/Capture.JPG') no-repeat 0 12px; 
+   display: block;
+   height: 80px;             /* adjust according your image size */
+   text-indent: -999em;  /* this hides the text */
+   text-decoration:none; /* old firefox would have shown underline for the link, this explicitly hides it */
+}
+
+/* position for the search box */
+div#search {
+   float: right;
+   width: 25em;    /* enough width for the search input box */
+   text-align: right;
+   padding: 3.0em 0.2em 0.2em 0;
+   margin: 0 1em;
+}
+
+div#menu_horiz {
+   float: right;
+   width: 25em;    /* enough width for the search input box */
+   text-align: right;
+   padding: 1.0em 0.2em 0.2em 0;
+   margin: 0 1em;
+}
+
+ div#content {
+   margin: 1.5em auto 2em 0;   /* some air above and under menu and content */
+}
+
+
+div#main {
+   margin-left: 29%; /* this will give room for sidebar to be on the left side, make sure this space is bigger than sidebar width */
+   margin-right: 2%; /* and some air on the right */
+}
+
+div#sidebar {
+   float: left;        /* set sidebar on the left side. Change to right to float it right instead. */
+   width: 26%;     /* sidebar width, if you change this please also change #main margins */
+   display: inline;  /* FIX IE double margin bug */
+   margin-left: 0;
+}
+
+div#footer {
+   clear: both;       /* keep footer below content and menu */
+   color: #fff;
+   background-color: #385C72; /* same bg color as in header */
+}
+
+div#footer p {
+   font-size: 0.8em;
+   padding: 1.5em;       /* some air for footer */
+   text-align: center;  /* centered text */
+   margin: 0;
+}
+
+div#footer p a {
+   color: #fff; /* needed becouse footer link would be same color as background otherwise */
+}
+
+/* as we hid all hr for accessibility we create new hr with extra div element */
+div.hr {
+   height: 1px;
+   padding: 1em;
+   border-bottom: 1px dotted black;
+   margin: 1em;
+}
+
+/* relational links under content */
+div.left49 {
+  width: 49%; /* 50% for both left and right might lead to rounding error on some browser */
+}
+
+div.right49 {
+  float: right;
+  width: 49%;
+  text-align: right;
+}
+
+
+
+
+/********************
+CONTENT STYLING
+*********************/
+div#content {
+  font-size: 14px;
+}
+
+/* HEADINGS */
+div#content h1 {
+   font-size: 11px; /* font size for h1 */
+   line-height: 1em;
+   margin: 0;
+}
+div#content h2 {
+	color: #294B5F; 
+	font-size: 16px; 
+	text-align: left; 
+/* some air around the text */
+	padding-left: 0.5em;
+	padding-bottom: 1px;
+/* set borders around header */
+	border-bottom: 1px solid #e7ab0b; 
+	border-left: 1.1em solid #e7ab0b; 
+        line-height: 1.5em;
+/* and some air under the border */
+        margin: 0 0 0.5em 0;
+}
+div#content h3 {
+   color: #294B5F; 
+   font-size: 11px;
+   line-height: 1.3em;
+   margin: 0 0 0.5em 0;
+}
+div#content h4 {
+   color: #294B5F; 
+   font-size: 11px;
+   line-height: 1.3em;
+   margin: 0 0 0.25em 0;
+}
+div#content h5 {
+   color: #294B5F; 
+   font-size: 11px;
+   line-height: 1.3em;
+   margin: 0 0 0.25em 0;
+}
+div#content img {
+   width: 100px;
+   height: 100px;
+}
+h6 {
+   color: #294B5F; 
+   font-size: 11px;
+   line-height: 1.3em;
+   margin: 0 0 0.25em 0;
+}
+/* END HEADINGS */
+
+/* TEXT */
+p {
+   font-size: 11px;
+   margin: 0 0 1.5em 0; /* some air around p elements */
+   line-height: 1.4em;
+   padding: 0;
+}
+
+blockquote {
+   border-left: 10px solid #ddd;
+   margin-left: 10px;
+}
+strong, b {
+/* explicit setting for these */
+   font-weight: bold;
+}
+em, i {
+/* explicit setting for these */
+   font-style:normal;
+}
+
+/* Wrapping text in <code> tags. Makes CSS not validate */
+code, pre {
+ white-space: pre-wrap;       /* css-3 */
+ white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+ white-space: -pre-wrap;      /* Opera 4-6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
+ font-family: Arial, Courier, monospace;
+ font-size: 11px;
+}
+
+pre {
+   border: 1px solid #000;  /* black border for pre blocks */
+   background-color: #ddd;
+   margin: 0 1em 1em 1em;
+   padding: 0.5em;
+   line-height: 1.5em;
+   font-size: 11px;
+
+
+}
+
+/* Separating the divs on the template explanation page, with some bottom-border */
+div.templatecode {
+  margin: 0 0 2.5em;
+}
+
+/* END TEXT */
+
+/* LISTS */
+/* lists in content need some margins to look nice */
+div#main ul,
+div#main ol,
+div#main dl {
+   font-size: 1.0em;
+   line-height: 1.4em;
+   margin: 0 0 1.5em 0;
+	list-style: none;
+}
+
+div#main ul li,
+div#main ol li {
+   margin: 0 0 0.25em 3em;
+	list-style: none;
+}
+
+/* definition lists topics on bold */
+div#main dl dt {
+   font-weight: bold;
+   margin: 0 0 0 1em;
+	list-style: none;
+}
+div#main dl dd {
+   margin: 0 0 1em 1em;
+	list-style: none;
+}
+
+div#main dl {
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #c0c0c0;
+  list-style: none;
+}
+
+H1{font-family: Arial, Verdana, Helvetica, sans-serif;font-size:11px;font-weight:normal;text-align: left;margin-bottom:5px;margin-top:5px;margin-left:10px;color:#ffffff;}
+H2,H3,H4{font-family: Arial, Verdana, Helvetica, sans-serif;font-size:11px;font-weight:normal;text-align: left;margin-bottom:5px;margin-top:5px;margin-left:10px;color:#ffffff;}
+
+#button {
+	width: 100%;
+	border-right: 0px solid #000;
+	border-top: 1px solid #f3f3f3;
+	padding: 0 0 0 0;
+	margin-bottom: 0em;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	background-color: #B0CE37;
+	color: #fff;
+	}
+	#button ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		border: none;
+		}
+		
+	#button li {
+		border-bottom: 1px solid #E5E5E5;
+		margin: 0;
+		}
+	#button ul ul a {
+   font-size: 90%;
+   padding: 0.5em 0.5em 0.5em 1.8em;
+	border-top: 0px solid #f1f1f1;
+      }
+	#button li a {
+		display: block;
+		padding: 5px 5px 5px 5px;
+		border-left: 5px solid #444444;
+		border-right: 0px solid #A8AF8F;
+		background-color: #ffffff;
+		color: #000;
+		text-decoration: none;
+		width: 100%;
+		}
+
+	html>body #button li a {
+		width: auto;
+		}
+
+	#button li a:hover {
+		border-left: 5px solid #000000;
+		border-right: 0px solid #B8BCA5;
+		background-color: #f9f9f9;
+		color: #B0CE37;
+		}
+
+/* END LISTS */
+
+/* accessibility */
+
+/* 
+menu links accesskeys 
+*/
+span.accesskey {
+   text-decoration:none;
+}
+
+/* 
+accessibility divs are hidden by default 
+text, screenreaders and such will show these 
+*/
+.accessibility, hr {
+   position: absolute;
+   top: -999em;
+   left: -999em;
+}
+
+/* 
+definition tags are also hidden 
+these are also used for menu links    
+*/
+dfn {
+   position: absolute;
+   left: -1000px;
+   top: -1000px;
+   width: 0;
+   height: 0;
+   overflow: hidden;
+   display: inline;
+}
+/* end accessibility */
+
+
+/* wiki style external links */
+/* external links will have "(external link)" text added, lets hide it */
+a.external span {
+  position: absolute;
+  left: -5000px;
+  width: 4000px;
+}
+
+/* make some room for the image */
+a.external {
+/* css shorthand rules, read: first top padding 0 then right padding 12px then bottom then right */
+  padding: 0 12px 0 0;
+}
+/* colors for external links */
+a.external:link {
+  color: #18507C;
+/* background image for the link to show wiki style arrow */
+  background: url(../images/cms/external.gif) no-repeat 100% 0;
+}
+a.external:visited {
+  color: #18507C; /* a different color can be used for visited external links */
+
+/* 
+Set the last 0 to -100px to use that part of the external.gif image for different color for active links 
+external.gif is actually 300px tall, we can use different positions of the image to simulate rollover image changes.
+*/
+  background: url(../images/cms/external.gif) no-repeat 100% 0; 
+}
+
+a.external:hover {
+  color: #18507C;
+/* Set the last 0 to -200px to use that part of the external.gif image for different color on hover */
+  background: url(../images/cms/external.gif) no-repeat 100% 0; 
+  background-color: #C3D4DF;
+}
+/* end wiki style external links */
+
+
+/* clearing */
+/* 
+clearfix is a hack for divs that hold floated elements. it will force the holding div to span all the way down to last floated item.
+We strongly recommend against using this as it is a hack and might not render correctly but it is included here for convenience.
+Do not edit if you dont know what you are doing
+*/
+	.clearfix:after {
+		content: "."; 
+		display: block; 
+		height: 0; 
+		clear: both; 
+		visibility: hidden;
+	}
+	* html>body .clearfix {
+		display: inline-block; 
+		width: 100%;
+	}
+	
+	* html .clearfix {
+		/* Hides from IE-mac \*/
+		height: 1%;
+		/* End hide from IE-mac */
+	}
+
+/* end clearing */
+
