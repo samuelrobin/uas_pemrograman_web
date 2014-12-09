@@ -27,11 +27,11 @@ if (isset($_POST['submit'])){
 		$result = mysqli_query($connection, $query);
 		
 		if ($result && mysqli_affected_rows($connection) >= 0 ){
-			// Success!
+			// Sukses
 			$_SESSION["message"] = "Sukses memperbarui";
 			redirect_to("manage_content.php");
 		} else {
-			// Fail
+			// Gagal
 			$message = "Gagal memperbarui";
 			redirect_to("edit_subject.php");
 		}
@@ -41,7 +41,7 @@ if (isset($_POST['submit'])){
 
 }else {
 
-}// end isset post
+}// Mengakhiri proses isset
 ?>
 <?php
  if (!$current_subject){
@@ -51,10 +51,10 @@ if (isset($_POST['submit'])){
 ?>
 <?php $layout_context = "admin";?>
 <?php include("../includes/layouts/header.php"); ?>
- <!-- Begin Wrapper -->
+ <!-- Memulai Wrapper -->
    <div id="wrapper">
 		 
-		 <!-- Begin Left Column -->
+		 <!-- Memulai Left Column -->
 		 <div id="leftcolumn">
 		 <a href="admin.php">&laquo; Main menu</a><br/>
 		 <div id="button"> <?php echo navigation($current_subject, $current_page); ?> <br></div>		
@@ -62,9 +62,9 @@ if (isset($_POST['submit'])){
 		 <a href="new_subject.php">Add a subject</a></br>
 		 <a href="edit_logo.php">Change Logo</a>
 		 </div>
-		 <!-- End Left Column -->
+		 <!-- Mengakhiri Left Column -->
 		 
-		 <!-- Begin Right Column -->
+		 <!-- Memulai Right Column -->
 		 <div id="rightcolumn">
 		     <?php if(!empty($message)){
 					echo "<div class=\"message\">". htmlentities($message). "</div>";
@@ -104,8 +104,8 @@ if (isset($_POST['submit'])){
 			<a href="delete_subject.php?subject=<?php echo urlencode($current_subject["id"]) ?>" onclick="return confirm('Kamu Yakin?');">Hapus</a>	
 		 </div>		 
 		 </div>
-		 <!-- End Right Column -->
+		 <!-- Mengakhiri Right Column -->
 		 
    </div>
-   <!-- End Wrapper -->
+   <!-- Tutup Bungkusan Wrapper -->
    <?php include("../includes/layouts/footer.php"); ?>

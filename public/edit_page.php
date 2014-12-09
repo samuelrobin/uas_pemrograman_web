@@ -35,12 +35,12 @@ validate_max_lengths($fields_with_max_lengths);
 			$result = mysqli_query($connection, $query);
 			echo $result;
 		if ($result && mysqli_affected_rows($connection) >= 0 ){
-			// Success!
+			// Sukses
 			$_SESSION["message"] = "Success updated";
 			echo $result;
 			redirect_to("manage_content.php");
 		} else {
-			// Fail
+			// Gagal
 			$message = "Fail update";
 			echo $result;
 			redirect_to("edit_subject.php");
@@ -49,22 +49,22 @@ validate_max_lengths($fields_with_max_lengths);
 		}
 else {
 
-}// end isset post
+}// Mengakhiri isset post
 ?>
 <?php $layout_context = "admin";?>
 <?php include("../includes/layouts/header.php"); ?>
- <!-- Begin Wrapper -->
+ <!-- Memulai Wrapper -->
    <div id="wrapper">
 		 
-		 <!-- Begin Left Column -->
+		 <!-- Memulai Left Column -->
 		 <div id="leftcolumn">
 		 <a href="admin.php">&laquo; Main menu</a><br/>
 		 <div id="button"> <?php echo navigation($current_subject, $current_page); ?> <br></div>		
 		 <div id="content"></div>
 		 </div>
-		 <!-- End Left Column -->
+		 <!-- Mengakhiri Left Column -->
 		 
-		 <!-- Begin Right Column -->
+		 <!-- Memulai Right Column -->
 		 <div id="rightcolumn">
 		    <?php if(!empty($message)){
 					echo "<div class=\"message\">". htmlentities($message). "</div>";
@@ -107,8 +107,8 @@ else {
 		    <a href="delete_page.php?page=<?php echo urlencode($current_page["id"]) ?>" onclick="return confirm('Kamu Yakin?');">Hapus</a>	
 		 </div>		 
 		 </div>
-		 <!-- End Right Column -->
+		 <!-- Mengakhiri Right Column -->
 		 
    </div>
-   <!-- End Wrapper -->
+   <!-- Tutup Bungkusan Wrapper -->
    <?php include("../includes/layouts/footer.php"); ?>

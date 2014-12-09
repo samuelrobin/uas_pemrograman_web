@@ -16,46 +16,46 @@ if (isset($_POST['submit'])){
  validate_presences($required_field);
  
  $fields_with_max_lengths = array("menu_name" => 30);
-validate_max_lengths($fields_with_max_lengths);
+ validate_max_lengths($fields_with_max_lengths);
 
-if(empty($errors)){
-		$subject_id = $current_subject["id"];
-		$menu_name = mysql_prep($_POST['menu_name']);
-		$position = mysql_prep($_POST['position']);
-		$visible = mysql_prep($_POST['visible']);
-		$content = mysql_prep($_POST['content']);
-		
-			$query  = "INSERT INTO pages (";
-			$query .= "subject_id, menu_name, position, visible, content";
-			$query .= ") VALUES (";
-			$query .= "{$subject_id}, '{$menu_name}', {$position}, {$visible}, '{$content}'";
-			$query .= ")";
-			$result = mysqli_query($connection, $query);
-			if ($result) {
-			// Success!
-			$_SESSION["message"] = "Success created";
-			redirect_to("manage_content.php?subject=". urlencode($current_subject["id"]));
-			} else {
-				// Fail
-				$_SESSION["message"] = "Fail created";
+	if(empty($errors)){
+			$subject_id = $current_subject["id"];
+			$menu_name = mysql_prep($_POST['menu_name']);
+			$position = mysql_prep($_POST['position']);
+			$visible = mysql_prep($_POST['visible']);
+			$content = mysql_prep($_POST['content']);
+			
+				$query  = "INSERT INTO pages (";
+				$query .= "subject_id, menu_name, position, visible, content";
+				$query .= ") VALUES (";
+				$query .= "{$subject_id}, '{$menu_name}', {$position}, {$visible}, '{$content}'";
+				$query .= ")";
+				$result = mysqli_query($connection, $query);
+				if ($result) {
+				// sukses
+				$_SESSION["message"] = "Success created";
+				redirect_to("manage_content.php?subject=". urlencode($current_subject["id"]));
+				} else {
+					// gagal
+					$_SESSION["message"] = "Fail created";
+				}
 			}
-		}
 }		
 ?>
 <?php $layout_context = "admin";?>
 <?php include("../includes/layouts/header.php"); ?>
- <!-- Begin Wrapper -->
+ <!-- Memulai Wrapper -->
    <div id="wrapper">
 		 
-		 <!-- Begin Left Column -->
+		 <!-- Memulai Left Column -->
 		 <div id="leftcolumn">
 		 <a href="admin.php">&laquo; Main menu</a><br/>
 		 <div id="button"> <?php echo navigation($current_subject, $current_page); ?> <br></div>		
 		 <div id="content"></div>
 		 </div>
-		 <!-- End Left Column -->
+		 <!-- Mengakhiri Left Column -->
 		 
-		 <!-- Begin Right Column -->
+		 <!-- Memulai Right Column -->
 		 <div id="rightcolumn">
 		     <?php echo message();?> 
 			 <?php echo form_errors(errors());?>
@@ -90,8 +90,8 @@ if(empty($errors)){
 			<a href="manage_content.php?subject=<?php echo urlencode($current_subject["id"]); ?>">Batal</a>	
 		 </div>		 
 		 </div>
-		 <!-- End Right Column -->
+		 <!-- Mengakhiri Right Column -->
 		 
    </div>
-   <!-- End Wrapper -->
+   <!-- Tutup Bungkusan Wrapper -->
    <?php include("../includes/layouts/footer.php"); ?>

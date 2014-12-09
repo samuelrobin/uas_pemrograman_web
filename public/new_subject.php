@@ -4,10 +4,10 @@
 <?php //$layout_context = "admin";?>
 <?php include("../includes/layouts/header.php"); ?>
 <?php find_selected_page(); ?>
- <!-- Begin Wrapper -->
+ <!-- Memulai Wrapper -->
    <div id="wrapper">
 		 
-		 <!-- Begin Left Column -->
+		 <!-- Memulai Left Column -->
 		 <div id="leftcolumn">
 		 <a href="admin.php">&laquo; Main menu</a><br/>
 		 <div id="button"> <?php echo navigation($current_subject, $current_page); ?> <br></div>		
@@ -15,13 +15,13 @@
 		 <a href="new_subject.php">Add a subject</a></br>
 		 <a href="edit_logo.php">Change Logo</a>
 		 </div>
-		 <!-- End Left Column -->
+		 <!-- Mengakhiri Left Column -->
 		 
-		 <!-- Begin Right Column -->
+		 <!-- Memulai Right Column -->
 		 <div id="rightcolumn">
 		     <?php echo message();?> 
 			 <?php echo form_errors(errors());?>
-	     <div id="pagetitle">></div>
+	     <div id="pagetitle"></div>
 	     <div id="content">
 		 <h2>Create Subject</h2>
 			<form action="create_subject.php" method="post">
@@ -49,8 +49,8 @@
 			<a href="manage_content.php">Cancel</a>	
 		 </div>		 
 		 </div>
-		 <!-- End Right Column -->
+		 <!-- Mengakhiri Right Column -->
 		 
    </div>
-   <!-- End Wrapper -->
+   <!-- Menutup Bungkusan Wrapper -->
    <?php include("../includes/layouts/footer.php"); ?>

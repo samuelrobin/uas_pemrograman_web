@@ -1,24 +1,24 @@
 <?php require_once("../includes/session.php");?>
 <?php require_once("../includes/db_connection.php"); ?>
 <?php require_once("../includes/functions.php"); ?>
-<?php //$layout_context = "admin";?>
+<?php $layout_context = "admin";?>
 <?php include("../includes/layouts/header.php"); ?>
 <?php find_selected_page(); ?>
- <!-- Begin Wrapper -->
+ <!-- Memulai Wrapper (Wrapper ini sebagai bungkusan dari HTML-->
    <div id="wrapper">
 		 
-		 <!-- Begin Left Column -->
+		 <!-- Memulai Left Column -->
 		 <div id="leftcolumn">
-		 <a href="admin.php">&laquo; Main menu</a><br/>
+		 <a href="admin.php">&laquo; Main menu</a><br/>		 <!-- &laquo untuk membuat simbol "<<" -->
 		 <div id="button"> <?php echo navigation($current_subject, $current_page); ?> <br></div>		
 		 <div id="content"></div>
-		 <a href="new_subject.php">Add a subject</a></br>
-		 <a href="edit_logo.php">Change Logo</a></br>
-		 <a href="edit_banner.php">Change Banner</a>
+		 <a href="new_subject.php">Menambah Subject</a></br>
+		 <a href="edit_logo.php">Merubah Logo</a></br>
+		 <a href="edit_banner.php">Merubah Banner</a>
 		 </div>
-		 <!-- End Left Column -->
+		 <!-- Mengakhiri Left Column -->
 		 
-		 <!-- Begin Right Column -->
+		 <!-- Memulai Right Column -->
 		 <div id="rightcolumn">
 		     <?php echo message();?>  
 	     <div id="pagetitle"></div>
@@ -62,9 +62,9 @@
 				<?php }?>	
 		 </div>		 
 		 </div>
-		 <!-- End Right Column -->
+		 <!-- Mengakhiri Right Column -->
 		 
    </div>
-   <!-- End Wrapper -->
+   <!-- Tutup bungkusan Wrapper -->
    <?php include("../includes/layouts/footer.php"); ?>
 

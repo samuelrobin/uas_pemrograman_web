@@ -30,7 +30,7 @@ if (isset($_POST['submit'])){
 	if ($result) {
 		// Success!
 		$_SESSION["message"] = "Success created";
-		redirect_to("manage_content.php");
+		redirect_to("manage_content.php"); // Fungsi "redirect_to" adalah fungsi di php seperti "header , locate"
 	} else {
 		// Fail
 		$_SESSION["message"] = "Fail created";

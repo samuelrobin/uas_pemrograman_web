@@ -1,8 +1,12 @@
 <?php require_once("../includes/session.php");?>
 <?php require_once("../includes/db_connection.php"); ?>
 <?php require_once("../includes/functions.php"); ?>
+<?php require_once("../includes/validation_functions.php"); ?>
 <?php 
 if (isset($_POST['submit'])){
+ $required_field = array("nama", "email", "topik", "pertanyaan", "pasta");
+ validate_presences($required_field);
+ 
 	$nama = mysql_prep($_POST['nama']);
 	$email = mysql_prep($_POST['email']);
 	$topik = mysql_prep($_POST['topik']);
