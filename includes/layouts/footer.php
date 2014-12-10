@@ -1,4 +1,4 @@
-      		 <!-- Begin Base -->
+      		 <!-- Memulai Base -->
 		 <div id="base">
 		 <div id="sitename">Copyright <?php echo date("Y")?>, Karang Anyar Ber1</div>
 </div>

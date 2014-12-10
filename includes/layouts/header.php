@@ -18,17 +18,14 @@ $baris = mysqli_fetch_assoc($hasil);
 </head>
 <body bgcolor="#ffffff" topmargin="0">
 <div align="center">
-   		 <!-- Begin TopArea -->
+   		 <!-- Memulai TopArea -->
 		 <div id="toparea"> 
 		 <div id="banner">
 			<div id="logo">
 			  <img src="<?php echo $baris["gambar"]; ?>"/>
 			</div>
-		 </div><!--
-it works the same with all jquery version from 1.x to 2.x -->
+		 </div>
 		<script type="text/javascript" src="js/jquery.js"></script>
-		<!-- use jssor.slider.mini.js (40KB) or jssor.sliderc.mini.js (32KB, with caption, no slideshow) or jssor.sliders.mini.js (28KB, no caption, no slideshow) instead for release -->
-		<!-- jssor.slider.mini.js = jssor.sliderc.mini.js = jssor.sliders.mini.js = (jssor.js + jssor.slider.js) -->
 		<script type="text/javascript" src="js/jssor.js"></script>
 		<script type="text/javascript" src="js/jssor.slider.js"></script>
 		<script>
@@ -65,8 +62,8 @@ it works the same with all jquery version from 1.x to 2.x -->
 				var jssor_slider1 = new $JssorSlider$("slider1_container", options);
 			});
 		</script>
-			<!-- Jssor Slider Begin -->
-			<!-- You can move inline styles to css file or css block. -->
+			<!-- Memulai Jssor Slider -->
+			
 			<div id="slider1_container" class=slider1 title="Outer Container" style="position: relative; width: 972px; height: 264px; top: 0px; left: 0px;">
 				
 					<!-- Loading Screen -->
@@ -137,4 +134,4 @@ it works the same with all jquery version from 1.x to 2.x -->
 					</div>
 					</div>
  			</div>
-			<!-- Jssor Slider End -->
+			<!-- Jssor Slider Berakhir -->
