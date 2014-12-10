@@ -15,9 +15,10 @@
 		 
 		 <!-- Begin Right Column -->
 		 <div id="rightcolumn">
-	     <div id="pagetitle"><h2>Admin Menu</h2></div>
+	     <div id="pagetitle"></div>
 	     <div id="content">
-			<p>Selamat datang di area admin, <?php echo htmlentities($_SESSION["username"]);?></p>
+			<h2>Admin Menu</h2>
+			<p style="font-size: 14;">Selamat datang di area admin, <?php echo htmlentities($_SESSION["username"]);?></p>
 				<ul>
 				  <li><a href="manage_content.php">Mengatur isi website</a></li>
 				  <li><a href="manage_admin.php">Mengatur admin user</a></li>
