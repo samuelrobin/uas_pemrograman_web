@@ -31,7 +31,7 @@
 				  <a href="edit_subject.php?subject=<?php echo urlencode($current_subject["id"]); ?>">Edit Subject</a>
 
 				<div style="font-size: 12px; margin-top: 2em; border-top: 1px solid #000;">
-				 Pages in this subject:
+				 Halaman dalam subject ini:
 				  <ul><?php $subject_pages = find_pages_for_subject($current_subject["id"]);
 				    while ($page = mysqli_fetch_assoc($subject_pages)){
 					 echo "<li>";
@@ -44,7 +44,7 @@
 				   ?>
 				  </ul><br>
 				  + <a href="new_page.php?subject=<?php 
-					echo urlencode($current_subject["id"]);?>">Add a new page to this subject</a>
+					echo urlencode($current_subject["id"]);?>">Tambah halaman pada subject ini</a>
 				</div>
 				
 				<?php } elseif ($current_page) {?>
@@ -58,7 +58,7 @@
 				  </div><br><br>
 				  <a href="edit_page.php?page=<?php echo urlencode($current_page['id']); ?>">Edit page</a>
 				<?php } else {?>
-				 Please select a subject or page.
+				 Silahkan pilih halaman atau subject disamping.
 				<?php }?>	
 		 </div>		 
 		 </div>
