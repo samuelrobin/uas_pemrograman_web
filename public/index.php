@@ -4,17 +4,17 @@
 <?php $layout_context = "public";?>
 <?php include("../includes/layouts/header.php"); ?>
 <?php find_selected_page(true); ?>
-<!-- Begin Wrapper -->
+<!-- Memulai Wrapper -->
    <div id="wrapper">
 		 
-		 <!-- Begin Left Column -->
+		 <!-- Memulai Left Column -->
 		 <div id="leftcolumn">
 			 <div id="button"> <?php echo public_navigation($current_subject, $current_page); ?> <br></div>		
 			 <div id="content"></div>
 		 </div>
-		 <!-- End Left Column -->
+		 <!-- Mengakhiri Left Column -->
 		 
-		 <!-- Begin Right Column -->
+		 <!-- Memulai Right Column -->
 		 <div id="rightcolumn">
 		  
 	     <div id="pagetitle"></div>
@@ -31,8 +31,8 @@
 				<?php }?>
 		 </div>		 
 		 </div>
-		 <!-- End Right Column -->
+		 <!-- Mengakhiri Right Column -->
 		 
    </div>
-   <!-- End Wrapper -->
+   <!-- Tutup Bungkusan Wrapper -->
 <?php include("../includes/layouts/footer.php"); ?>

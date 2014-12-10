@@ -24,11 +24,11 @@
 		$result = mysqli_query($connection, $sql);
 		
 		if($result){
-		//SUCCESS
+		//Sukses
 			$_SESSION["message"] = "Admin created.";
 			redirect_to("manage_admin.php");
 		} else{
-		//FAILURE
+		//Gagal
 			$_SESSION["message"]  = "Admin creation failed.";
 		}
 	
@@ -38,17 +38,17 @@
 ?>
 <?php $layout_context = "admin"?>
 <?php include("../includes/layouts/header.php");?>
-<!-- Begin Wrapper -->
+<!-- Memulai Wrapper -->
    <div id="wrapper">
 		 
-		 <!-- Begin Left Column -->
+		 <!-- Memulai Left Column -->
 		 <div id="leftcolumn">
 		 <div id="button">&nbsp;</div>		
 		 <div id="content"></div>
 		 </div>
-		 <!-- End Left Column -->
+		 <!-- Mengakhiri Left Column -->
 		 
-		 <!-- Begin Right Column -->
+		 <!-- Memulai Right Column -->
 		 <div id="rightcolumn">
 			<?php echo message(); ?>
 			<?php $errors = errors(); ?>
@@ -68,8 +68,8 @@
 			<a href="manage_admin.php">Batal</a>
 		 </div>		 
 		 </div>
-		 <!-- End Right Column -->
+		 <!-- Mengakhiri Right Column -->
 		 
    </div>
-   <!-- End Wrapper -->
+   <!-- Tutup Bungkusan Wrapper -->
 <?php	include("../include/layouts/footer.php");?>		
