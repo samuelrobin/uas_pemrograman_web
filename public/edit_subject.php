@@ -69,7 +69,7 @@ if (isset($_POST['submit'])){
 		     <?php if(!empty($message)){
 					echo "<div class=\"message\">". htmlentities($message). "</div>";
 				 } ?>
-			 <?php echo form_errors(errors());?>
+			 <?php echo form_errors($errors);?>
 	     <div id="pagetitle"></div>
 	     <div id="content">
 		 <h2>Edit Subject: </h2>
