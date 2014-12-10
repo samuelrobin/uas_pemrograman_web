@@ -15,6 +15,10 @@ $baris = mysqli_fetch_assoc($hasil);
 <title>Tanya Pepo <?php if ($layout_context == "admin") {
 			echo "Admin"; }?></title>
 <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<!--MulaiScript tinymce untuk mengubah textarea menjadi html generator-->
+		<script src="//tinymce.cachefly.net/4.1/tinymce.min.js"></script>
+		<script>tinymce.init({selector:'textarea'});</script>
+	<!--akhir script-->
 </head>
 <body bgcolor="#ffffff" topmargin="0">
 <div align="center">

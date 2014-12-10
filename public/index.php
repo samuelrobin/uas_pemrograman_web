@@ -22,7 +22,7 @@
 				 <?php if ($current_page) {?>
 				  
 				  <h2><?php echo htmlentities($current_page["menu_name"]); ?></h2><br />
-				   <?php echo nl2br($current_page["content"]); ?><br />
+				   <?php echo $current_page["content"]; ?><br />
 				  <br><br>
 				<?php } else {?>
 				 <h2>Selamat Datang!</h2></br>
