@@ -254,7 +254,7 @@
 					$output .=  " class = 'title' ";
 					}
 				  $output .=  ">";
-				$output .= "<a href=\"index.php?page=";
+				$output .= "<a style=\"font-size: 14px;\" href=\"index.php?page=";
 				$output .=  urlencode($page["id"]);
 				$output .= "\">";
 				$output .=  htmlentities($page["menu_name"]);
