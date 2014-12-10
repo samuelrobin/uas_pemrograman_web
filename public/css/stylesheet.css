@@ -96,6 +96,10 @@ padding: 0;
  width: 170px;
  float: left;
 }
+
+#leftcolumn a {
+ font-size: 14px;
+}
 #rightcolumn { 
  float: right;
  text-align: left;
@@ -317,7 +321,7 @@ h6 {
 
 /* TEXT */
 p {
-   font-size: 11px;
+   font-size: 12px;
    margin: 0 0 1.5em 0; /* some air around p elements */
    line-height: 1.4em;
    padding: 0;
@@ -412,16 +416,19 @@ H2,H3,H4{font-family: Arial, Verdana, Helvetica, sans-serif;font-size:11px;font-
 	font-family: Arial, Verdana, Helvetica, sans-serif;
 	background-color: #B0CE37;
 	color: #fff;
+	
 	}
 	#button ul {
 		list-style: none;
 		margin: 0;
 		padding: 0;
 		border: none;
+		
 		}
 		
 	#button li {
 		border-bottom: 1px solid #E5E5E5;
+		font-size: 12px!important;
 		margin: 0;
 		}
 	#button ul ul a {
@@ -437,6 +444,7 @@ H2,H3,H4{font-family: Arial, Verdana, Helvetica, sans-serif;font-size:11px;font-
 		background-color: #ffffff;
 		color: #000;
 		text-decoration: none;
+		font-size: 15px;
 		width: 100%;
 		}
 
