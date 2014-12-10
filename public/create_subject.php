@@ -28,11 +28,11 @@ if (isset($_POST['submit'])){
 	$result = mysqli_query($connection, $query);
 	
 	if ($result) {
-		// Success!
+		// Sukses
 		$_SESSION["message"] = "Success created";
-		redirect_to("manage_content.php"); // Fungsi "redirect_to" adalah fungsi di php seperti "header , locate"
+		redirect_to("manage_content.php"); // Fungsi "redirect_to" adalah fungsi yang dibuat di php seperti "header , locate"
 	} else {
-		// Fail
+		// Gagal
 		$_SESSION["message"] = "Fail created";
 		redirect_to("new_subject.php");
 	}

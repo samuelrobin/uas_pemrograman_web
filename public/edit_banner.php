@@ -18,13 +18,13 @@ if (isset($_POST['submit'])){
 		  if($file_size <= 2*1024*1024){
 			$sumber = $file_tmp;
 			$tujuan = "images/" . $file_name;
-			//Writes the photo to the server 
+			//ngupload foto ke server 
                         if(move_uploaded_file($file_tmp, $tujuan)) 
                           { 
                             echo "The file ". basename( $_FILES['banner']['name']). " has been uploaded, and your information has been added to the directory"; 
                           } 
                             else { 
-								//Gives and error if its not 
+								//memberi pesan eror jika salah 
 							echo "Sorry, there was a problem uploading your file."; } 
 			
 				if($_POST['id'] == 1) {
@@ -54,17 +54,17 @@ if (isset($_POST['submit'])){
 ?>
 <?php $layout_context = "admin";?>
 <?php include("../includes/layouts/header.php"); ?>
-<!-- Begin Wrapper -->
+<!-- Memulai Wrapper -->
    <div id="wrapper">
 		 
-		 <!-- Begin Left Column -->
+		 <!-- Memulai Left Column -->
 		 <div id="leftcolumn">
 		 <div id="button">&nbsp;</div>		
 		 <div id="content"></div>
 		 </div>
-		 <!-- End Left Column -->
+		 <!-- Mengakhiri Left Column -->
 		 
-		 <!-- Begin Right Column -->
+		 <!-- Memulai Right Column -->
 		 <div id="rightcolumn">
 			<?php echo message(); ?>
 			<?php $errors = errors(); ?>
@@ -94,8 +94,8 @@ if (isset($_POST['submit'])){
 			<a href="manage_content.php">Batal</a>	
 		 </div>		 
 		 </div>
-		 <!-- End Right Column -->
+		 <!-- Mengakhiri Right Column -->
 		 
    </div>
-   <!-- End Wrapper -->
+   <!-- Tutup Bungkusan Wrapper -->
 <?php include("../includes/layouts/footer.php"); ?>

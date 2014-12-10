@@ -3,17 +3,17 @@
 <?php confirm_logged_in(); ?>
 <?php $layout_context = "admin";?>
 <?php include("../includes/layouts/header.php"); ?>
-<!-- Begin Wrapper -->
+<!-- Memulai Wrapper -->
    <div id="wrapper">
 		 
-		 <!-- Begin Left Column -->
+		 <!-- Memulai Left Column -->
 		 <div id="leftcolumn">
 		 <div id="button">&nbsp;</div>		
 		 <div id="content"></div>
 		 </div>
-		 <!-- End Left Column -->
+		 <!-- Mengakhiri Left Column -->
 		 
-		 <!-- Begin Right Column -->
+		 <!-- Memulai Right Column -->
 		 <div id="rightcolumn">
 	     <div id="pagetitle"></div>
 	     <div id="content">
@@ -26,8 +26,8 @@
 				</ul>
 		 </div>		 
 		 </div>
-		 <!-- End Right Column -->
+		 <!-- Mengakhiri Right Column -->
 		 
    </div>
-   <!-- End Wrapper -->
+   <!-- Tutup Bungkusan Wrapper -->
 <?php include("../includes/layouts/footer.php"); ?>	

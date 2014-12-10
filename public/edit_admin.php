@@ -34,11 +34,11 @@
 		$hasil = mysqli_query($connection, $sql);
 		
 		if($hasil &&  mysqli_affected_rows($connection) == 1){
-		//SUCCESS
+		//Sukses
 			$_SESSION["message"] = "Admin updated.";
 			redirect_to("manage_admin.php");
 		} else{
-		//FAILURE
+		//Gagal
 			$_SESSION["message"]  = "Admin update failed.";
 		}
 	
