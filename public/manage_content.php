@@ -53,9 +53,7 @@
 				  Position: <?php echo $current_page["position"]; ?><br />
 				  Visible: <?php echo $current_page["visible"]; ?><br />
 				  Content:<br />
-				  <div class="view-content">
 				   <?php echo $current_page["content"]; ?><br />
-				  </div><br><br>
 				  <a href="edit_page.php?page=<?php echo urlencode($current_page['id']); ?>">Edit page</a>
 				<?php } else {?>
 				 Silahkan pilih halaman atau subject disamping.

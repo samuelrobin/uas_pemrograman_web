@@ -307,10 +307,7 @@ div#content h5 {
    line-height: 1.3em;
    margin: 0 0 0.25em 0;
 }
-div#content img {
-   width: 100px;
-   height: 100px;
-}
+
 h6 {
    color: #294B5F; 
    font-size: 11px;
