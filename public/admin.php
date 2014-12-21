@@ -22,6 +22,7 @@
 				<ul>
 				  <li><a href="manage_content.php">Mengatur isi website</a></li>
 				  <li><a href="manage_admin.php">Mengatur admin user</a></li>
+				  <li><a href="baca_pesan.php">Baca pertanyaan masuk</a></li>
 				  <li><a href="logout.php">Logout</a></li>
 				</ul>
 		 </div>		 

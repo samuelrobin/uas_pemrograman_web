@@ -53,7 +53,7 @@ padding: 0;
  width:160px; 
  height: 41px; 
  float: left; 
- margin:16px; 
+ margin:10px; 
  padding:10px 0;
 }
 #sitename {
@@ -136,7 +136,7 @@ a:active {
    text-decoration: none;
 /* css validation akan memberi peringatan jika warna yang diset tanpa warna background. Ini akan menjelaskan element ini buat menginherit bg colour dari element induk*/
    background-color: inherit; 
-   color: #B0CE37; 
+    color: #B0CE37; 
 }
 
 a:visited {

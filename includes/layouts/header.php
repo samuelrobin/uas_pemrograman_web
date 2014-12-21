@@ -26,7 +26,7 @@ $baris = mysqli_fetch_assoc($hasil);
 		 <div id="toparea"> 
 		 <div id="banner">
 			<div id="logo">
-			  <img src="<?php echo $baris["gambar"]; ?>"/>
+			  <img style="width: 160px; height: 45px;" src="<?php echo $baris["gambar"]; ?>"/>
 			</div>
 		 </div>
 		<script type="text/javascript" src="js/jquery.js"></script>
